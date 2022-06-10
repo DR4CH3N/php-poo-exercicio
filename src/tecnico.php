@@ -1,6 +1,8 @@
 <?php
 
-abstract class Tecnico extends Livro {
+require_once "Livro.php";
+
+class Tecnico extends Livro {
     private array $formato;
 
     // GETTERS E SETTERS

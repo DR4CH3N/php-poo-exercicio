@@ -1,4 +1,6 @@
 <?php
+
+
 abstract class Livro {
     // propriedades (ou atributos)
     private string $titulo;
