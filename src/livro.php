@@ -1,5 +1,5 @@
 <?php
-class Livro {
+abstract class Livro {
     // propriedades (ou atributos)
     private string $titulo;
     private string $autor;
@@ -33,3 +33,6 @@ class Livro {
         $this->paginas = $paginas;
     }
 }
+
+
+
