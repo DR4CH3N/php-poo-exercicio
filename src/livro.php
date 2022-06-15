@@ -8,8 +8,8 @@ abstract class Livro {
     private int $paginas;
 
 
-    public function formataTitulo(string $titulo) {
-        return "<strong>". mb_strtoupper($titulo). "</strong>";
+    public function formataTitulo() {
+        return "<strong>". mb_strtoupper($this->getTitulo()). "</strong>";
 
     }
 

@@ -81,11 +81,12 @@
     
     <hr>
     <section>
-    <?=$programacaoA->formataTitulo($programacaoA->getTitulo())?>
-    
+    <p>Tecnico: <?=$tecnicoA->formataTitulo()?></p>
+    <p>Programacao: <?=$programacaoA->formataTitulo()?></p>
+    <p>Didatico: <?=$didaticoA->formataTitulo()?></p>
     <br>
 
-    <?=$didaticoA->formataTitulo($didaticoA->getTitulo())?>
+    
     </section>
     
 </body>

@@ -7,7 +7,9 @@ class Programacao extends Tecnico {
 
     // GETTERS E SETTERS
 
-
+    public function formataTitulo():string {
+        return "<i style='color:blue'>". $this->getTitulo(). "</i>";
+    }
 
    
     public function getArea(): string
@@ -23,9 +25,5 @@ class Programacao extends Tecnico {
         return $this;
     }
     
-    public function formataTitulo(string $titulo) {
-        return "<i style='color:blue'>". $titulo. "</i>";
-
-    }
-
+  
 }
