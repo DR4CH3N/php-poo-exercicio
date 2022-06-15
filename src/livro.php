@@ -34,6 +34,10 @@ abstract class Livro {
     public function setPaginas(int $paginas) {
         $this->paginas = $paginas;
     }
+
+    public function FormataTitulo() {
+        echo "<p><strong>".$this->getTitulo()."</strong></p>";
+    }
 }
 
 
