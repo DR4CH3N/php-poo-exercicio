@@ -8,8 +8,13 @@ abstract class Livro {
     private int $paginas;
 
 
+    public function formataTitulo(string $titulo) {
+        return "<strong>". mb_strtoupper($titulo). "</strong>";
 
-    
+    }
+
+
+
     /*metodos getters e setters*/
     public function getTitulo():string {
         return $this->titulo;
@@ -35,9 +40,24 @@ abstract class Livro {
         $this->paginas = $paginas;
     }
 
-    public function FormataTitulo() {
-        echo "<p><strong>".$this->getTitulo()."</strong></p>";
+
+
+
+
+    protected function getformataTitulo(): string
+    {
+        return $this->formataTitulo;
     }
+
+     
+    protected function setformataTitulo (string $formataTitulo)
+    {
+        $this->formataTitulo = $formataTitulo;
+    }
+
+    
+
+
 }
 
 

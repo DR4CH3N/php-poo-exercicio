@@ -29,10 +29,14 @@
     $tecnicoA->setTitulo('um livro ai');
     $tecnicoA->setAutor('uma pessoa ai');
     $tecnicoA->setPaginas(470);
-    
 
+
+    
+    $programacaoA->setTitulo('qualquer coisa');
     $programacaoA->setArea('sistemas');
 
+
+    $didaticoA->setTitulo('livro de biologia');
     $didaticoA->setDisciplina('biologia');
     $didaticoA->setNivel(['basico','medio','avancado']);
     
@@ -74,6 +78,15 @@
     <pre> <?=var_dump($tecnicoA)?> </pre>
     <pre> <?=var_dump($didaticoA)?> </pre>
     <pre> <?=var_dump($programacaoA)?> </pre>
+    
+    <hr>
+    <section>
+    <?=$programacaoA->formataTitulo($programacaoA->getTitulo())?>
+    
+    <br>
+
+    <?=$didaticoA->formataTitulo($didaticoA->getTitulo())?>
+    </section>
     
 </body>
 </html>

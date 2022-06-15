@@ -22,4 +22,10 @@ class Programacao extends Tecnico {
 
         return $this;
     }
+    
+    public function formataTitulo(string $titulo) {
+        return "<i style='color:blue'>". $titulo. "</i>";
+
+    }
+
 }
