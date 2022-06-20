@@ -13,6 +13,9 @@
     <?php
     // importando a classe
     require_once "vendor/autoload.php";
+
+    // definindo qual namespace sera usado, e as classes pertencentes ao namespace
+    use exercicio\{Tecnico, Programacao, Didatico, Web};
    
 
     // criação dos objetos
