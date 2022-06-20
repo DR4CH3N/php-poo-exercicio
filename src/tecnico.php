@@ -1,5 +1,7 @@
 <?php
 
+namespace exercicio;
+
 require_once "Livro.php";
 
 class Tecnico extends Livro {

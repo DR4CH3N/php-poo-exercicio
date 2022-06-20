@@ -1,4 +1,5 @@
 <?php
+namespace exercicio;
 
 
 abstract class Livro {

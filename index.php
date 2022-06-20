@@ -12,35 +12,36 @@
     
     <?php
     // importando a classe
-    require_once "src/programacao.php";
-    require_once "src/didatico.php";
-    require_once "src/tecnico.php";
+    require_once "vendor/autoload.php";
+   
 
     // criação dos objetos
 
-    $tecnicoA = new Tecnico;
-    $programacaoA = new Programacao;
-    $didaticoA = new Didatico;
+    // usando as classes a partir de um namespace comum
+    $tecnicoA = new exercicio\Tecnico;
+    $programacaoA = new exercicio\Programacao;
+    $didaticoA = new exercicio\Didatico;
 
 
     // atribuindo dados via setters do objeto
 
+    // LIVRO TECNICO
     $tecnicoA->setFormato(['digital', ' fisico']);
     $tecnicoA->setTitulo('um livro ai');
     $tecnicoA->setAutor('uma pessoa ai');
     $tecnicoA->setPaginas(470);
 
 
-    
+    // LIVRO DE PROGRAMACAO
     $programacaoA->setTitulo('qualquer coisa');
     $programacaoA->setArea('sistemas');
 
-
+    // LIVRO DIDATICO
     $didaticoA->setTitulo('livro de biologia');
     $didaticoA->setDisciplina('biologia');
     $didaticoA->setNivel(['basico','medio','avancado']);
     
-
+    // CLASSE NOVA WEB
     
 
     
