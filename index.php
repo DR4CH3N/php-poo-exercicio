@@ -42,6 +42,7 @@
     $didaticoA->setNivel(['basico','medio','avancado']);
     
     // CLASSE NOVA WEB
+    $livroWeb = new exercicio\Web;
     
 
     
@@ -75,10 +76,7 @@
     <p>Area: <?=$programacaoA->getArea()?></p>
     
     
-    
-    <pre> <?=var_dump($tecnicoA)?> </pre>
-    <pre> <?=var_dump($didaticoA)?> </pre>
-    <pre> <?=var_dump($programacaoA)?> </pre>
+    <pre> <?=var_dump($livroWeb)?> </pre>
     
     <hr>
     <section>
